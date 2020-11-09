@@ -7,11 +7,17 @@
   <!-- Test infrastructure - DO NOT EDIT -->
 </head>
 
-<div id="root"></div>
+<div class="layout">
+  <div class="messages" id="messages-root"></div>
+  <div class="controls-layout">
+    <div class="typing" id="typing-root"></div>
+    <form class="controls" onsubmit="return false">
+      <input placeholder="Say something" id="message-input" />
+      <button id="controls-send-btn">Send</button>
+    </form>
+  </div>
+</div>
 
 <!-- Your code goes here -->
 
-<form class="controls">
-  <input placeholder="Say something"/>
-  <button>Send</button>
-</form>
+
