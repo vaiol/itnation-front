@@ -1,0 +1,69 @@
+body {
+    background: #f5fbff;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.message {
+    position: relative;
+    padding: 12px 15px;
+    background: white;
+    border-radius: 3px;
+    filter: drop-shadow(0 1px 2px rgba(36, 91, 140, 0.3));
+    line-height: 150%;
+}
+
+.message.with-arrow:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-10px);
+    width: 0; 
+    height: 0; 
+    border-bottom: 17px solid transparent; 
+    border-right: 17px solid white; 
+}
+
+.message.self {
+    background: $blue;
+    color: white;
+}
+
+.message.self.with-arrow:before {
+    left: initial;
+    right: 0;
+    transform: translateX(10px);
+    border-right: 0;
+    border-left: 17px solid $blue; 
+}
+
+.controls {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
+} 
+
+input,
+button {
+    height: 40px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px 1px rgba(36, 91, 140, 0.15);
+    border: none;
+}
+
+input {
+    border-radius: 9999px;
+    background: white;
+    flex-grow: 1;
+    margin-right: 15px;
+}
+
+button {
+    background: #3794ff;
+    border-radius: 3px;
+    color: white;
+    font: inherit;
+    font-size: 14px;
+}
