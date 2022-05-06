@@ -12,7 +12,6 @@ class Message extends HTMLElement {
   }
 
   connectedCallback() {
-    console.log(this.user);
     const shadow = this.attachShadow({mode: 'closed'});
 
     shadow.innerHTML = `

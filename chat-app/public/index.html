@@ -1,6 +1,6 @@
 <head>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
-  <script src="../src/scripts/chat-engine-local.js"></script>
+  <script src="../src/scripts/chat-engine-http.js"></script>
   <script src="../src/scripts/components/message.js"></script>
   <link rel="stylesheet" href="../src/styles/style.css">
 </head>
@@ -10,7 +10,10 @@
   <div class="messages-header">
     Messages
   </div>
-  <div class="messages" id="messages-root"></div>
+  <div class="messages" id="messages-root">
+  </div>
+
+
   <div class="controls-layout">
     <form class="controls" onsubmit="return false">
       <input placeholder="Type message" id="message-input" />

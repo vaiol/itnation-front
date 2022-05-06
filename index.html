@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ChatInit</title>
+  <style>
+      body {
+          margin: 0;
+      }
+      .layout {
+          height: 100vh;
+          display: grid;
+          grid-template-columns: 20% 80%;
+          grid-template-rows: auto 1fr 10%;
+          grid-template-areas:
+            "sidebar header"
+            "sidebar messages"
+            "sidebar footer"
+      }
+      .sidebar {
+          grid-area: sidebar;
+          background-color: aquamarine;
+      }
+      .header {
+          grid-area: header;
+          padding-left: 24px;
+          padding-top: 27px;
+          padding-bottom: 27px;
+          font-family: 'Helvetica',sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 125%;
+      }
+      .messages {
+          grid-area: messages;
+          background-color: mediumvioletred;
+      }
+      .footer {
+          grid-area: footer;
+
+          display: flex;
+          justify-content: start;
+          align-items: center;
+      }
+      .btn {
+          background: #615EF0;
+          border-radius: 12px;
+          padding: 8px 16px;
+          font-family: 'Helvetica',sans-serif;
+          color: #FFFFFF;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 150%;
+      }
+  </style>
+</head>
+<body>
+<div class="layout">
+  <div class="sidebar"></div>
+  <div class="header">
+    Messages
+  </div>
+  <div class="messages"></div>
+  <div class="footer">
+    <div class="btn">
+      Send
+    </div>
+  </div>
+</div>
+</body>
+</html>
