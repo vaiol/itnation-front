@@ -1,9 +1,7 @@
 <head>
-  <!-- Test infrastructure - DO NOT EDIT -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
   <script src="../src/scripts/chat-engine-local.js"></script>
   <script src="../src/scripts/components/message.js"></script>
-  <!-- Test infrastructure - DO NOT EDIT -->
   <link rel="stylesheet" href="../src/styles/style.css">
 </head>
 
@@ -12,19 +10,7 @@
   <div class="messages-header">
     Messages
   </div>
-  <div class="messages" id="messages-root">
-    <div class="message with-arrow">
-      <div class="message-name" style="color: red">
-        User1
-      </div>
-      <span>
-        Message text 1
-      </span>
-      <div class="message-time">
-        16:30
-      </div>
-    </div>
-  </div>
+  <div class="messages" id="messages-root"></div>
   <div class="controls-layout">
     <form class="controls" onsubmit="return false">
       <input placeholder="Type message" id="message-input" />
@@ -32,7 +18,6 @@
     </form>
   </div>
 </div>
-<!-- Your code goes here -->
 <script src="../src/scripts/messanger-engine.js"></script>
 
 
